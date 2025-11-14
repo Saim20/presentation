@@ -1,0 +1,247 @@
+/* RFL Presentation Styles - Clean Modern Design */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+    --rfl-red: #E31E24;
+    --rfl-dark-red: #C41E3A;
+    --rfl-light-red: #FF4444;
+    --rfl-gray: #333333;
+    --rfl-light-gray: #F8F9FA;
+    --rfl-border: #E0E0E0;
+    --rfl-white: #FFFFFF;
+}
+
+.reveal {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--rfl-white);
+}
+
+.reveal h1 { 
+    font-size: 3.5em; 
+    color: var(--rfl-red);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 0.3em;
+}
+
+.reveal h2 { 
+    font-size: 2.5em; 
+    color: var(--rfl-gray);
+    margin-bottom: 0.8em;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+    border-bottom: 4px solid var(--rfl-red);
+    display: inline-block;
+}
+
+.reveal h3 { 
+    font-size: 1.8em; 
+    color: var(--rfl-red);
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reveal h3::before {
+    content: '';
+    width: 4px;
+    height: 1.2em;
+    background: var(--rfl-red);
+    display: inline-block;
+}
+
+.reveal h4 {
+    font-size: 1.4em;
+    color: var(--rfl-dark-red);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.reveal ul { 
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+.reveal li { 
+    margin: 10px 0;
+    color: var(--rfl-gray);
+}
+
+.reveal ol li {
+    font-size: 1.1em;
+    margin: 12px 0;
+}
+
+.reveal strong { 
+    color: var(--rfl-red);
+    font-weight: 600;
+}
+
+.reveal .subtitle { 
+    font-size: 1.6em; 
+    color: #666; 
+    margin-top: 20px;
+    font-weight: 300;
+}
+
+.reveal .company-info { 
+    font-size: 1.4em; 
+    color: var(--rfl-red); 
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.reveal p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: var(--rfl-gray);
+}
+
+.two-column { 
+    display: flex; 
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.two-column > div { 
+    flex: 1;
+}
+
+.highlight-box { 
+    background: var(--rfl-white);
+    padding: 28px;
+    border-radius: 8px;
+    margin: 16px 0;
+    border-left: 5px solid var(--rfl-red);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.highlight-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(227,30,36,0.15);
+}
+
+.metric { 
+    font-size: 2.4em; 
+    color: var(--rfl-red);
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon {
+    font-family: 'Material Icons';
+    font-size: 1.5em;
+    vertical-align: middle;
+    color: var(--rfl-red);
+    margin-right: 8px;
+}
+
+/* Clean card design */
+.card {
+    background: var(--rfl-white);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--rfl-red);
+}
+
+.slide-number { 
+    position: absolute; 
+    bottom: 10px; 
+    right: 10px; 
+    font-size: 0.6em; 
+    color: #999; 
+}
+
+/* Slide-specific adjustments */
+.reveal section {
+    height: 100%;
+    padding: 50px 80px;
+    background: var(--rfl-white);
+}
+
+.reveal .slides {
+    background: var(--rfl-white);
+}
+
+/* Title slide styling */
+.title-slide {
+    background: var(--rfl-white) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 100px !important;
+}
+
+.title-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background: var(--rfl-red);
+}
+
+/* Stats/metrics grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    background: var(--rfl-light-gray);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 4px solid var(--rfl-red);
+    font-size: 1.2em;
+}
+
+/* Better vertical spacing */
+.reveal section > div {
+    max-height: 90%;
+}
+
+/* Clean list style */
+.reveal ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.reveal ul li::before {
+    content: '▸';
+    color: var(--rfl-red);
+    font-weight: bold;
+    display: inline-block;
+    width: 1.2em;
+    margin-left: -1.2em;
+    padding-right: 0.3em;
+}
+
+.reveal ol {
+    padding-left: 1.5em;
+}
+
+.reveal ol li {
+    padding-left: 0.5em;
+}
+
+/* Section divider */
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: var(--rfl-red);
+    margin: 20px auto;
+}

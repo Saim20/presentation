@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RFL Plastics - Operations Management Analysis</title>
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reset.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="css/presentation.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <div data-slide="slide_01_title"></div>
+            <div data-slide="slide_02_company_overview"></div>
+            <div data-slide="slide_03_objectives"></div>
+            <div data-slide="slide_04_transformation"></div>
+            <div data-slide="slide_05_process_design"></div>
+            <div data-slide="slide_06_automation"></div>
+            <div data-slide="slide_07_workflow"></div>
+            <div data-slide="slide_08_capacity"></div>
+            <div data-slide="slide_09_scheduling"></div>
+            <div data-slide="slide_10_supply_chain"></div>
+            <div data-slide="slide_11_quality"></div>
+            <div data-slide="slide_12_front_office"></div>
+            <div data-slide="slide_13_improvement"></div>
+            <div data-slide="slide_14_sustainability"></div>
+            <div data-slide="slide_15_challenges"></div>
+            <div data-slide="slide_16_thank_you"></div>
+        </div>
+    </div>
+
+    <script src="node_modules/reveal.js/dist/reveal.js"></script>
+    <script>
+        // Load slide content dynamically
+        async function loadSlides() {
+            const slideContainers = document.querySelectorAll('[data-slide]');
+            
+            for (const container of slideContainers) {
+                const slideName = container.getAttribute('data-slide');
+                const response = await fetch(`slides/${slideName}.html`);
+                const content = await response.text();
+                container.outerHTML = content;
+            }
+            
+            // Initialize Reveal.js after all slides are loaded
+            const script = document.createElement('script');
+            script.src = 'js/presentation.js';
+            document.body.appendChild(script);
+        }
+        
+        loadSlides();
+    </script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "rfl-presentation",
+  "version": "1.0.0",
+  "description": "RFL Plastics Operations Management Presentation",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": ["presentation", "reveal.js", "rfl"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal.js": "^5.2.1"
+  }
+}
