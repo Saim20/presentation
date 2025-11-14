@@ -17,7 +17,7 @@ A clean, modern presentation for RFL Plastics Operations Management using Reveal
 npm install
 ```
 
-### Run Presentation
+### Run Presentation Locally
 ```bash
 npm start
 ```
@@ -27,6 +27,31 @@ Or simply:
 ```bash
 npm run dev
 ```
+
+### Live Demo
+🌐 **View Online**: [https://saim20.github.io/presentation/](https://saim20.github.io/presentation/)
+
+## Deployment
+
+This presentation is automatically deployed to GitHub Pages via GitHub Actions.
+
+### Automatic Deployment
+Every push to the `main` branch automatically deploys to GitHub Pages.
+
+### Manual Setup (First Time Only)
+1. Go to your repository settings: https://github.com/Saim20/presentation/settings/pages
+2. Under "Build and deployment":
+   - Source: **GitHub Actions**
+3. Push your changes to trigger deployment
+
+### Deploy Now
+```bash
+git add .
+git commit -m "Update presentation"
+git push origin main
+```
+
+The site will be live at: https://saim20.github.io/presentation/
 
 ## Directory Structure
 ```
