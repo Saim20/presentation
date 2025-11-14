@@ -10,6 +10,30 @@
                 <li><span class="metric">95-96%</span> quality rate (4-5% defects)</li>
                 <li>In-house R&D and testing labs</li>
             </ul>
+            
+            <!-- KPI Visualization SVG -->
+            <div style="text-align: start; margin-top: 20px;">
+                <svg width="450" height="300" viewBox="0 0 300 200" style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));">
+                    <!-- OEE Progress Bar -->
+                    <rect x="90" y="30" width="120" height="30" fill="#ecf0f1" rx="3"/>
+                    <rect x="90" y="30" width="90" height="30" fill="#3498db" opacity="0.8" rx="3"/>
+                    <text x="150" y="50" text-anchor="middle" fill="#2c3e50" font-size="14" font-weight="bold">OEE: 75%</text>
+                    <text x="150" y="75" text-anchor="middle" fill="#7f8c8d" font-size="10">Target: 85%</text>
+                    
+                    <!-- Capacity Utilization Bar -->
+                    <rect x="90" y="90" width="120" height="30" fill="#ecf0f1" rx="3"/>
+                    <rect x="90" y="90" width="114" height="30" fill="#E31E24" opacity="0.8" rx="3"/>
+                    <text x="150" y="110" text-anchor="middle" fill="white" font-size="14" font-weight="bold">Capacity: >95%</text>
+                    
+                    <!-- Defect Rate Circle -->
+                    <circle cx="150" cy="160" r="35" fill="none" stroke="#ecf0f1" stroke-width="10"/>
+                    <circle cx="150" cy="160" r="35" fill="none" stroke="#e74c3c" stroke-width="10" 
+                            stroke-dasharray="11 220" transform="rotate(-90 150 160)"/>
+                    <text x="150" y="160" text-anchor="middle" fill="#2c3e50" font-size="16" font-weight="bold">4-5%</text>
+                    <text x="150" y="175" text-anchor="middle" fill="#2c3e50" font-size="10">Defects</text>
+                </svg>
+            </div>
+            
         </div>
         <div>
             <h3><span class="material-icons" style="font-size: 1.2em; vertical-align: middle; margin-right: 10px;">analytics</span>Key Performance Indicators</h3>
