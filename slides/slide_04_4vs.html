@@ -12,17 +12,16 @@
                     </div>
                     <h3 style="color: #3498db; margin: 0; font-size: 1.5em;">VOLUME</h3>
                 </div>
-                <p style="font-size: 1em; margin-bottom: 12px;"><strong>High Volume Production</strong></p>
-                <ul style="font-size: 0.95em; line-height: 1.6; margin-bottom: 15px;">
-                    <li><span class="metric" style="font-size: 1.8em;">20,000+</span> tons/month capacity</li>
-                    <li><span class="metric" style="font-size: 1.8em;">620+</span> molding machines</li>
+                <p style="font-size: 0.95em; margin-bottom: 10px;"><strong>High Volume Production</strong></p>
+                <ul style="font-size: 0.88em; line-height: 1.5; margin-bottom: 12px;">
+                    <li><span class="metric" style="font-size: 1.6em;">20,000+</span> tons/month capacity</li>
+                    <li><span class="metric" style="font-size: 1.6em;">620+</span> molding machines</li>
                     <li>Economies of scale advantage</li>
-                    <li>Low unit costs, high efficiency</li>
                     <li>Continuous 24/7 operations</li>
                 </ul>
                 <!-- Volume Bar Chart -->
-                <div style="text-align: center; margin-top: auto;">
-                    <svg width="100%" height="110" viewBox="0 0 280 95" style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));">
+                <div style="text-align: center; flex: 1; display: flex; align-items: center; justify-content: center;">
+                    <svg width="100%" height="95" viewBox="0 0 280 95" style="filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));">
                         <rect x="20" y="60" width="45" height="20" fill="#3498db" opacity="0.6" rx="3"/>
                         <rect x="85" y="45" width="45" height="35" fill="#3498db" opacity="0.7" rx="3"/>
                         <rect x="150" y="25" width="45" height="55" fill="#3498db" opacity="0.85" rx="3"/>
@@ -32,6 +31,17 @@
                         <text x="172" y="95" text-anchor="middle" font-size="11" fill="#2c3e50" font-weight="bold">2020</text>
                         <text x="237" y="95" text-anchor="middle" font-size="11" fill="#2c3e50" font-weight="bold">2025</text>
                     </svg>
+                </div>
+                <!-- Rating Bar: Low to High -->
+                <div style="margin-top: auto;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                        <span style="font-size: 0.8em; color: #7f8c8d; font-weight: 600;">Low</span>
+                        <span style="font-size: 1em; color: #3498db; font-weight: bold;">Rating: 9/10</span>
+                        <span style="font-size: 0.8em; color: #7f8c8d; font-weight: 600;">High</span>
+                    </div>
+                    <div style="width: 100%; height: 18px; background: linear-gradient(to right, #e8f4f8 0%, #3498db 100%); border-radius: 10px; position: relative; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
+                        <div style="position: absolute; left: 90%; top: 50%; transform: translate(-50%, -50%); width: 22px; height: 22px; background: #2c3e50; border: 3px solid white; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,31 +55,41 @@
                     </div>
                     <h3 style="color: #e74c3c; margin: 0; font-size: 1.5em;">VARIETY</h3>
                 </div>
-                <p style="font-size: 1em; margin-bottom: 12px;"><strong>Extensive Product Range</strong></p>
-                <ul style="font-size: 0.95em; line-height: 1.6; margin-bottom: 15px;">
+                <p style="font-size: 0.95em; margin-bottom: 10px;"><strong>Moderate Product Range</strong></p>
+                <ul style="font-size: 0.88em; line-height: 1.5; margin-bottom: 12px;">
                     <li><strong>Thousands of SKUs</strong></li>
                     <li>Household, furniture, industrial, pipes</li>
-                    <li><span class="metric" style="font-size: 1.8em;">7,500+</span> molds for customization</li>
-                    <li>Flexible manufacturing capabilities</li>
-                    <li>Custom and standard products</li>
+                    <li><span class="metric" style="font-size: 1.6em;">7,500+</span> molds for customization</li>
+                    <li>Balanced standardization & customization</li>
                 </ul>
                 <!-- Variety Icons -->
-                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: auto;">
-                    <div style="text-align: center; background: #fff5f5; padding: 10px; border-radius: 8px;">
-                        <span class="material-icons" style="font-size: 2.2em; color: #e74c3c;">chair</span>
-                        <p style="font-size: 0.85em; margin: 5px 0 0; font-weight: 600;">Furniture</p>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; flex: 1;">
+                    <div style="text-align: center; background: #fff5f5; padding: 8px; border-radius: 8px;">
+                        <span class="material-icons" style="font-size: 2em; color: #e74c3c;">chair</span>
+                        <p style="font-size: 0.8em; margin: 4px 0 0; font-weight: 600;">Furniture</p>
                     </div>
-                    <div style="text-align: center; background: #fff5f5; padding: 10px; border-radius: 8px;">
-                        <span class="material-icons" style="font-size: 2.2em; color: #e74c3c;">kitchen</span>
-                        <p style="font-size: 0.85em; margin: 5px 0 0; font-weight: 600;">Household</p>
+                    <div style="text-align: center; background: #fff5f5; padding: 8px; border-radius: 8px;">
+                        <span class="material-icons" style="font-size: 2em; color: #e74c3c;">kitchen</span>
+                        <p style="font-size: 0.8em; margin: 4px 0 0; font-weight: 600;">Household</p>
                     </div>
-                    <div style="text-align: center; background: #fff5f5; padding: 10px; border-radius: 8px;">
-                        <span class="material-icons" style="font-size: 2.2em; color: #e74c3c;">plumbing</span>
-                        <p style="font-size: 0.85em; margin: 5px 0 0; font-weight: 600;">Pipes</p>
+                    <div style="text-align: center; background: #fff5f5; padding: 8px; border-radius: 8px;">
+                        <span class="material-icons" style="font-size: 2em; color: #e74c3c;">plumbing</span>
+                        <p style="font-size: 0.8em; margin: 4px 0 0; font-weight: 600;">Pipes</p>
                     </div>
-                    <div style="text-align: center; background: #fff5f5; padding: 10px; border-radius: 8px;">
-                        <span class="material-icons" style="font-size: 2.2em; color: #e74c3c;">precision_manufacturing</span>
-                        <p style="font-size: 0.85em; margin: 5px 0 0; font-weight: 600;">Industrial</p>
+                    <div style="text-align: center; background: #fff5f5; padding: 8px; border-radius: 8px;">
+                        <span class="material-icons" style="font-size: 2em; color: #e74c3c;">precision_manufacturing</span>
+                        <p style="font-size: 0.8em; margin: 4px 0 0; font-weight: 600;">Industrial</p>
+                    </div>
+                </div>
+                <!-- Rating Bar: High to Low -->
+                <div style="margin-top: auto; padding-top: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                        <span style="font-size: 0.8em; color: #7f8c8d; font-weight: 600;">High</span>
+                        <span style="font-size: 1em; color: #e74c3c; font-weight: bold;">Rating: 6/10</span>
+                        <span style="font-size: 0.8em; color: #7f8c8d; font-weight: 600;">Low</span>
+                    </div>
+                    <div style="width: 100%; height: 18px; background: linear-gradient(to right, #e74c3c 0%, #fce8e6 100%); border-radius: 10px; position: relative; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
+                        <div style="position: absolute; left: 40%; top: 50%; transform: translate(-50%, -50%); width: 22px; height: 22px; background: #2c3e50; border: 3px solid white; border-radius: 50%; box-shadow: 0 2px 6px rgba(0,0,0,0.3);"></div>
                     </div>
                 </div>
             </div>
